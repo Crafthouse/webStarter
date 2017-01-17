@@ -1,0 +1,11 @@
+/*
+ * Function that make it possible to use rem
+ * units as if you would type pixels
+ *
+ * Example: line-height: rem(26); = 26px
+ *
+*/
+@function rem($size) {
+	$remSize: $size / 16;
+	@return $remSize * 1rem;
+}

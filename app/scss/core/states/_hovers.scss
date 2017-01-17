@@ -1,0 +1,54 @@
+/*==============================
+================================
+* All hover states for
+* the website
+================================
+==============================*/
+.download,
+.social-link { transition: .25s; }
+
+
+// Strikethrough hover effect on anchors
+.link {
+    position: relative;
+    display: inline-block;
+}
+
+.link:before, .link:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: $primary-text-color;
+}
+
+.link:before { left: 0; }
+
+.link:after {
+    right: 0;
+    background: $primary-text-color;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.link:hover:before,
+.link:focus:before {
+    background: $primary-text-color;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.link:hover:after,
+.link:focus:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+}
+
+.social-link:hover,
+.social-link:focus,
+.download:hover,
+.download:focus {
+    background: $dark-primary-color;
+}

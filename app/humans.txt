@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Design and development by <name>
+
+
+# THANKS
+
+    We would like to thank the people at <client name> for a great experience
+    and a smooth process throughout the whole project.
+
+# COLOPHON
+
+    This website is built by a dedicated team of designers and developers.
+    The team built this site with many technologies and years of experience,
+    but we always welcome suggestions and talented people to help us.
