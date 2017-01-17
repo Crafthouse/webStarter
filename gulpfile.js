@@ -60,9 +60,21 @@ gulp.task('minify-css', function() {
 
 gulp.task('images', function(){
     return gulp.src('app/img/**/*.+(png|jpg|gif|svg)')
-        .pipe(imagemin({
-            interlaced: true
-        }))
+        .pipe(imagemin([
+          imagemin.svgo({
+            plugins: [
+              { optimizationLevel: 3 },
+              { progessive: true },
+              { interlaced: true },
+              { removeViewBox: false },
+              { removeUselessStrokeAndFill: false },
+              { cleanupIDs: false }
+           ]
+         }),
+         imagemin.gifsicle(),
+         imagemin.jpegtran(),
+         imagemin.optipng()
+        ]))
         .pipe(gulp.dest('deploy/img'));
 });
 
