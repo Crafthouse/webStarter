@@ -63,10 +63,10 @@
                 </div>
                 <ul>
                     <li>
-                        <a class="link menu-link" href="#">docs</a>
+                        <a class="link menu-link" href="https://github.com/Crafthouse/webStarter">docs</a>
                     </li>
                     <li>
-                        <a class="link menu-link" href="#">srouce code</a>
+                        <a class="link menu-link" href="https://github.com/Crafthouse/webStarter">source code</a>
                     </li>
                 </ul>
             </nav>
