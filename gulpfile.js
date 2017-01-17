@@ -42,9 +42,9 @@ gulp.task('watch', ['browserSync', 'sass'], function () {
 
 gulp.task('minify-js', function (cb) {
     pump([
-            gulp.src('app/js/*.js'),
+            gulp.src('app/js/**/*.js'),
             uglify(),
-            gulp.dest('deploy/js')
+            gulp.dest('deploy/js/')
         ],
         cb
     );
@@ -52,7 +52,7 @@ gulp.task('minify-js', function (cb) {
 
 
 gulp.task('minify-css', function() {
-    return gulp.src('app/css/*.css')
+    return gulp.src('app/css/**/*.css')
         .pipe(cssnano())
         .pipe(gulp.dest('deploy/css/'));
 });
@@ -76,10 +76,7 @@ gulp.task('layout', function() {
 
 // Grab all root files + hidden to deploy
 gulp.task('root-files', function() {
-    gulp.src('app/*')
-        .pipe(gulp.dest('deploy'));
-        //grab any hidden files too
-    gulp.src('app/.*')
+    gulp.src(['app/*', 'app/.*', '!app/scss'])
         .pipe(gulp.dest('deploy'));
 });
 

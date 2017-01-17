@@ -1,6 +1,6 @@
 Welcome to webStarter :)
 
-webStarter is a simple website boilerplate.
+webStarter is a PHP website boilerplate.
 An easy way to start a new website project.
 
 How to use:
