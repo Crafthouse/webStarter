@@ -17,6 +17,7 @@
         <meta property="og:description" content="">
         <meta property="og:url" content="">
 
+        <!-- You could remove the favicon references, and just place icon in root, many modern browsers looks for the icon at root without the reference. -->
         <link href="favicon.ico" rel="icon">
         <!--[if IE]>
             <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
